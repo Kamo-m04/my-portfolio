@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamogelo Mhlanga – Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif;}
+    body {background:#f8f9fb; color:#222; line-height:1.6;}
+    header {background:#ffffff; padding:1rem 0; box-shadow:0 2px 8px rgba(0,0,0,0.05); position:sticky; top:0; z-index:1000;}
+    nav {max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:0 1rem;}
+    nav a.brand {font-size:1.3rem; font-weight:700; color:#111; text-decoration:none;}
+    nav ul {display:flex; list-style:none; gap:1.5rem;}
+    nav ul li a {text-decoration:none; color:#333; font-weight:500;}
+    nav ul li a:hover {color:#007bff;}
+
+    .hero {max-width:1100px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:4rem 1rem;}
+    .hero-text {max-width:600px;}
+    .hero h1 {font-size:3rem; font-weight:700; margin-bottom:1rem;}
+    .accent {color:#007bff;}
+    .lead {font-size:1.1rem; margin-bottom:1.5rem; color:#444;}
+    .btn-primary, .btn-secondary {padding:0.8rem 1.4rem; border-radius:8px; text-decoration:none; font-weight:600;}
+    .btn-primary {background:#007bff; color:white;}
+    .btn-secondary {background:white; border:2px solid #007bff; color:#007bff;}
+    .hero-buttons {display:flex; gap:1rem; margin-bottom:1rem;}
+
+    section {padding:4rem 1rem; max-width:1100px; margin:auto;}
+    .section-title {font-size:2rem; margin-bottom:2rem; text-align:center;}
+
+    /* Skills */
+    .skills-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:1.5rem;}
+    .skill-box {background:white; padding:1.5rem; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05);} 
+    .skill-box h3 {margin-bottom:0.5rem;}
+
+    /* Projects */
+    .projects-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:2rem;}
+    .project-card {background:white; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05); overflow:hidden;}
+    .project-card img {width:100%; display:block;}
+    .project-card .body {padding:1.2rem;}
+    .project-card h3 {margin-bottom:0.5rem;}
+    .tags {color:#007bff; font-size:0.9rem; margin-bottom:1rem;}
+    .project-links a {margin-right:1rem; color:#007bff; text-decoration:none; font-weight:500;}
+
+    /* Contact */
+    .contact-list {list-style:none; margin:1rem 0;}
+    .contact-list li {margin-bottom:0.5rem;}
+
+    footer {background:#111; color:white; text-align:center; padding:1.5rem 0; margin-top:3rem;}
+  </style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <a class="brand" href="#home">Kamogelo Mhlanga</a>
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hi, I'm <span class="accent">Kamogelo</span></h1>
+    <p class="lead">Frontend Developer passionate about building clean, responsive websites and user‑friendly digital experiences.</p>
+    <div class="hero-buttons">
+      <a class="btn-primary" href="#projects">View Projects</a>
+      <a class="btn-secondary" href="#contact">Get In Touch</a>
+    </div>
+    <p>GitHub: <a href="https://github.com/Kamo-m04" target="_blank">github.com/Kamo-m04</a></p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-box"><h3>Frontend</h3><p>HTML • CSS • JavaScript • Responsive Design • React (basic)</p></div>
+    <div class="skill-box"><h3>Data</h3><p>Python • SQL • Pandas • NumPy • scikit-learn</p></div>
+    <div class="skill-box"><h3>Tools</h3><p>Git • GitHub • VS Code • Figma • Jupyter</p></div>
+    <div class="skill-box"><h3>Soft Skills</h3><p>Problem-solving • Communication • Teamwork</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="images/techcon.png" alt="TechCon project" />
+      <div class="body">
+        <h3>TechCon 2024 Website</h3>
+        <p>Responsive multi-section site built from a Figma UI using HTML & CSS Grid.</p>
+        <p class="tags">HTML • CSS • Responsive</p>
+        <p class="project-links"><a href="#">Live Demo</a> <a href="https://github.com/Kamo-m04/TechCon_HTML">Code</a></p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/movie-reco.png" alt="Movie recommendation project" />
+      <div class="body">
+        <h3>Movie Recommendation System</h3>
+        <p>Data-driven movie recommender built with Python & machine learning libraries.</p>
+        <p class="tags">Python • Pandas • ML</p>
+        <p class="project-links"><a href="https://github.com/Kamo-m04/moviefinder">Code</a></p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/maji-ndogo.png" alt="Maji Ndogo project" />
+      <div class="body">
+        <h3>Maji Ndogo Agricultural Analysis</h3>
+        <p>Cleaned, validated & analysed soil + weather datasets for crop recommendations.</p>
+        <p class="tags">Python • SQL • Analysis</p>
+        <p class="project-links"><a href="https://github.com/Kamo-m04/Maji-Ndogo-Analysis">Code</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <ul class="contact-list">
+    <li><strong>Email:</strong> <a href="mailto:kamogeloreese@gmail.com">kamogeloreese@gmail.com</a></li>
+    <li><strong>Phone:</strong> 067 177 2145</li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/Kamo-m04">github.com/Kamo-m04</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Kamogelo Mhlanga • All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
+                
+
+                
